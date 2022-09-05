@@ -11,7 +11,7 @@ import 'peach-ui-react/dist/lib/peach.css'
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "peach-ui-react"
+import {Button, Input, TodoList} from "peach-ui-react"
 ```
 
 就可以使用我提供的组件了。
@@ -27,9 +27,9 @@ import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "peach-ui-react"
   </div>
 </template>
 <script>
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "peach-ui-vue"
-export default {
-  components: {Button}
-}
+  import {Button, Input, TodoList} from "peach-ui-react"
+  export default {
+    components: {Button}
+  }
 </script>
 ```
