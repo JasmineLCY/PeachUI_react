@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5201511",
+      "name": "桃子",
+      "font_class": "taozi",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "13244904",
+      "name": "peach",
+      "font_class": "peach",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}

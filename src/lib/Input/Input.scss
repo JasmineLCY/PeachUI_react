@@ -1,0 +1,78 @@
+.peach-input-container{
+  $width:200px;
+  $height:30px;
+  $border-radius:5px;
+  $fixColor:lightgrey;
+  $fontSize:16px;
+  $padding:3px;
+  .input-wraper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 10px;
+  }
+  .input-base{
+    padding: $padding;
+    border-radius: $border-radius;
+    height: $height;
+    width: $width;
+    &-addon{
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    &-after{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &-noBorder{
+      border: none;
+      border-bottom: 1px solid grey;
+    }
+  }
+  .input-size-small{
+    $borderRadiusSmall:0.5*$border-radius;
+    font-size: 0.8*$fontSize;
+    width: $width;
+    height: 0.5*$height;
+    border-radius: $borderRadiusSmall;
+    &-addon{
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    &-after{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .input-size-large{
+    $borderRadiusLarge:1.3*$border-radius;
+    font-size: 1.2*$fontSize;
+    width: $width;
+    height: 1.3*$height;
+    border-radius: $borderRadiusLarge;
+    &-addon{
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    &-after{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .input-fix{
+    padding: $padding;
+    height: $height;
+    padding: 3px;
+    background-color:$fixColor;
+    border: 1px solid gray;
+    &-pre{
+      border-radius:$border-radius 0 0 $border-radius;
+    }
+    &-suf{
+      border-radius:0 $border-radius $border-radius 0;
+    }
+    
+  }
+  
+}

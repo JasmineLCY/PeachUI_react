@@ -1,0 +1,59 @@
+.topnavAndBanner {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(145deg, pink 0%, pink);
+  padding: 10px;
+  clip-path: ellipse(80% 60% at 50% 40%);
+
+}
+.banner{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 30%;
+  margin-left: 35%;
+}
+h1,h2,.actions{
+  color: aliceblue;
+  width: 100%;
+  text-align: center;
+}
+h2{
+  color: black;
+}
+.actions {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.actions a{
+  background-color: palevioletred;
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.features{
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item .icon{
+  width: 70px;
+  height: 70px;
+} 
+.banner p a:hover{
+  color: white;
+
+}
