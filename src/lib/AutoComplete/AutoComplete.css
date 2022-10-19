@@ -1,0 +1,50 @@
+.autoComplete{
+    width: 400px;
+    height: 40px;
+    position: relative;
+}
+input{
+    width: 400px;
+    height: 40px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    font-size: 14px;
+}
+input:focus-visible{
+    outline: 1px solid rgb(173, 133, 140) ;
+}
+.dropdownCard{
+    position:absolute;
+    left: 0;
+    top:45px;
+    width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    border: 1px solid pink;
+    border-radius: 10px;
+    box-shadow: aquamarine;
+    background-color: white;
+}
+.dropdownCard:hover{
+    overflow-y: auto;
+}
+
+.optionItem{
+    padding: 10px;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+    font-size: 14px;
+}
+
+.optionItem:hover{
+    background-color: rgb(247, 210, 216);
+    color: #444;
+}
+
+.notFound{
+    min-height: 60px;
+    padding: 10px;
+    color: gray;
+    background-color: white;
+    font-size: 14px;
+}

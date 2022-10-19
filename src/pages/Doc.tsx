@@ -8,6 +8,7 @@ import "./Doc.css";
 import { ButtonDemo } from "../components/ButtonDemo/ButtonDemo";
 import { TodoListDemo } from "../components/TodoListDemo/TodoListDemo";
 import { InputDemo } from "../components/InputDemo/InputDemo";
+import { AutoCompleteDemo } from "../components/AutoCompleteDemo/AutoCompleteDemo";
 
 const Doc: React.FC<{}> = () => {
   const location = useLocation();
@@ -80,6 +81,16 @@ const Doc: React.FC<{}> = () => {
             >
               <Link to="/doc/totolist">Todolist 组件</Link>
             </div>
+            <div
+              className="li"
+              style={
+                location.pathname === "/doc/autocomplete"
+                  ? { background: "palevioletred" }
+                  : {}
+              }
+            >
+              <Link to="/doc/autocomplete">AutoComplete 组件</Link>
+            </div>
           </div>
         </aside>
         <main className={"markdown-body"} style={{ overflow: "auto" }}>
@@ -90,6 +101,7 @@ const Doc: React.FC<{}> = () => {
             <Route path="/button" element={<ButtonDemo />} />
             <Route path="/totolist" element={<TodoListDemo />} />
             <Route path="/input" element={<InputDemo />} />
+            <Route path='/autocomplete' element={<AutoCompleteDemo/>}/>
           </Routes>
         </main>
       </div>

@@ -9,7 +9,7 @@ interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, "size"> {
   noBorder?: boolean;
   after?: string;
   addon?: string;
-  onChange?: (event: ChangeEvent<HTMLElement>) => void;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Input: React.FC<InputProps> = (props) => {
